@@ -1,0 +1,36 @@
+openapi: 3.0.0
+info:
+  description: 'HUBEDI Integrações'
+  version: '1.0.0'
+  title: 'HUBEDI Integrações API'
+  contact:
+    email: ''
+  license:
+    name: 'Apache 2.0'
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+paths:
+  /v1/origins:
+    get:
+      tags:
+        - 'Origins'
+      summary: return all origins.
+      description: return all origins.
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref:
+    post:
+      tags:
+        - 'Origins'
+      summary: create origin.
+      description: create origin.
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref:
